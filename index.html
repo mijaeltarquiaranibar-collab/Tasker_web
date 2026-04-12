@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasker - Tu aliado en Tecnología</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+    <link rel="shortcut icon" type="image/png" href="favicon.png?v=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ============================================
+         NAVEGACIÓN
+         ============================================ -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="logo.png" alt="Logo Tasker" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#asesoria">Asesoría</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+
+                <div class="hero-text">
+                    <span class="hero-badge">Aprende el futuro</span>
+                    <h1 class="hero-title">
+                        Domina la
+                        <span class="highlight">Electrónica</span> y
+                        <span class="highlight">Programación</span>
+                    </h1>
+                    <p class="hero-description">
+                        Cursos prácticos y asesoría especializada para transformar tus ideas en proyectos reales.
+                        Desde los fundamentos hasta el desarrollo avanzado.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#cursos" class="btn btn-primary">Ver Cursos</a>
+                        <a href="#contacto" class="btn btn-secondary">Consultar Asesoría</a>
+                    </div>
+                </div>
+
+                <!-- CARRUSEL DE FOTOS -->
+                <div class="hero-visual">
+                    <div class="carousel-wrapper" id="carousel">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active" data-caption="Proyectos de electrónica">
+                                <img src="imagenes/foto1.jpg" alt="Electrónica">
+                                <div class="carousel-caption"><span>Proyectos de electrónica</span></div>
+                            </div>
+                            <div class="carousel-slide" data-caption="Programación y código">
+                                <img src="imagenes/foto2.jpg" alt="Programación">
+                                <div class="carousel-caption"><span>Programación y código</span></div>
+                            </div>
+                            <div class="carousel-slide" data-caption="Arduino y microcontroladores">
+                                <img src="imagenes/foto3.jpg" alt="Arduino">
+                                <div class="carousel-caption"><span>Arduino y microcontroladores</span></div>
+                            </div>
+                            <div class="carousel-slide" data-caption="Diseño de PCB profesional">
+                                <img src="imagenes/foto4.jpg" alt="PCB">
+                                <div class="carousel-caption"><span>Diseño de PCB profesional</span></div>
+                            </div>
+                            <div class="carousel-slide" data-caption="Clases 100% prácticas">
+                                <img src="imagenes/foto5.jpg" alt="Clases">
+                                <div class="carousel-caption"><span>Clases 100% prácticas</span></div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn carousel-btn-prev" aria-label="Anterior">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"/>
+                            </svg>
+                        </button>
+                        <button class="carousel-btn carousel-btn-next" aria-label="Siguiente">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="carousel-dots" id="carouselDots"></div>
+                </div>
+                <!-- FIN CARRUSEL -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ESTADÍSTICAS
+         ============================================ -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Estudiantes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="8">0</div>
+                    <div class="stat-label">Cursos Activos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">% Satisfacción</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="55">0</div>
+                    <div class="stat-label">Proyectos Asesorados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CURSOS
+         ============================================ -->
+    <section id="cursos" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Formación</span>
+                <h2 class="section-title">Nuestros Cursos</h2>
+                <p class="section-description">Programas diseñados para llevarte desde cero hasta nivel profesional</p>
+            </div>
+
+            <div class="course-categories">
+                <button class="category-btn active" data-category="todos">Todos</button>
+                <button class="category-btn" data-category="electronica">Electrónica</button>
+                <button class="category-btn" data-category="programacion">Programación</button>
+            </div>
+
+            <div class="courses-grid">
+
+                <!-- Electrónica Básica -->
+                <div class="course-card" data-category="electronica">
+                    <div class="course-icon">
+                        <img src="imagenes_cursos/icono-electronica-basica.png" alt="Electrónica Básica" class="course-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="course-icon-fallback" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="18" stroke="#10e2d2" stroke-width="2"/>
+                                <path d="M15 20h10M20 15v10" stroke="#10e2d2" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="course-title-btn" data-modal="modal-electronica-basica">Electrónica Básica</button>
+                    <p class="course-description">Introducción a los principios fundamentales de los circuitos eléctricos y electrónicos, abarcando el estudio de componentes básicos, técnicas de medición, herramientas de simulación y desarrollo de prácticas experimentales orientadas al aprendizaje práctico.</p>
+                    <div class="course-meta">
+                        <span class="course-duration">10 clases</span>
+                        <span class="course-duration">25 horas</span>
+                        <span class="course-level">Básico</span>
+                    </div>
+                    <a href="#contacto" class="course-link">Contacto →</a>
+                </div>
+
+                <!-- Arduino Básico Intermedio -->
+                <div class="course-card" data-category="programacion">
+                    <div class="course-icon">
+                        <img src="imagenes_cursos/icono-arduino.png" alt="Arduino Básico Intermedio" class="course-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="course-icon-fallback" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="10" y="10" width="20" height="20" stroke="#10e2d2" stroke-width="2" rx="2"/>
+                                <path d="M16 16l8 8M24 16l-8 8" stroke="#10e2d2" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="course-title-btn" data-modal="modal-arduino">Arduino Básico Intermedio</button>
+                    <p class="course-description">Programación de la plataforma de desarrollo Arduino orientada al diseño de sistemas embebidos. El curso abarca desde los fundamentos de programación hasta la implementación de proyectos prácticos, integrando sensores, actuadores y control de dispositivos electrónicos.</p>
+                    <div class="course-meta">
+                        <span class="course-duration">10 clases</span>
+                        <span class="course-duration">25 horas</span>
+                        <span class="course-level">Básico - Intermedio</span>
+                    </div>
+                    <a href="#contacto" class="course-link">Contacto →</a>
+                </div>
+
+                <!-- Diseño de PCB -->
+                <div class="course-card" data-category="electronica">
+                    <div class="course-icon">
+                        <img src="imagenes_cursos/icono-pcb.png" alt="Diseño de PCB" class="course-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="course-icon-fallback" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M10 20h30M20 10v30" stroke="#10e2d2" stroke-width="2"/>
+                                <circle cx="20" cy="20" r="5" fill="#ed0f54"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="course-title-btn" data-modal="modal-pcb">Diseño de PCB</button>
+                    <p class="course-description">Diseño y simulación de circuitos electrónicos orientado a la creación de placas PCB, desde el desarrollo del esquema hasta su fabricación tanto artesanal como profesional. El curso integra herramientas de diseño, validación mediante simulación y procesos reales de producción.</p>
+                    <div class="course-meta">
+                        <span class="course-duration">10 clases</span>
+                        <span class="course-duration">25 horas</span>
+                        <span class="course-level">Básico - Intermedio</span>
+                    </div>
+                    <a href="#contacto" class="course-link">Contacto →</a>
+                </div>
+
+                <!-- Electrónica Intermedio -->
+                <div class="course-card" data-category="electronica">
+                    <div class="course-icon">
+                        <img src="imagenes_cursos/icono-intermedio.png" alt="Electrónica Intermedio" class="course-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="course-icon-fallback" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M15 12l-8 8 8 8M25 12l8 8-8 8" stroke="#10e2d2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="course-title-btn" data-modal="modal-electronica-intermedio">Electrónica Intermedio</button>
+                    <p class="course-description">Análisis de circuitos eléctricos y electrónicos mediante el uso de herramientas de simulación como Proteus y equipos de medición como el osciloscopio. El curso aborda el estudio de dispositivos fundamentales como diodos, circuitos RC y amplificadores operacionales.</p>
+                    <div class="course-meta">
+                        <span class="course-duration">10 clases</span>
+                        <span class="course-duration">25 horas</span>
+                        <span class="course-level">Básico - Intermedio</span>
+                    </div>
+                    <a href="#contacto" class="course-link">Contacto →</a>
+                </div>
+
+                <!-- ESP32 Boards -->
+                <div class="course-card" data-category="programacion">
+                    <div class="course-icon">
+                        <img src="imagenes_cursos/icono-esp32.png" alt="ESP32 Boards" class="course-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="course-icon-fallback" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="8" y="12" width="24" height="16" stroke="#10e2d2" stroke-width="2" rx="1"/>
+                                <path d="M14 18l4 4-4 4" stroke="#10e2d2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="course-title-btn" data-modal="modal-esp32">ESP32 Boards</button>
+                    <p class="course-description">Programación de la plataforma de desarrollo ESP32. El curso aborda desde la configuración del entorno hasta el desarrollo de aplicaciones avanzadas, integrando conectividad inalámbrica, sensores y control de dispositivos en tiempo real.</p>
+                    <div class="course-meta">
+                        <span class="course-duration">10 clases</span>
+                        <span class="course-duration">25 horas</span>
+                        <span class="course-level">Intermedio - Avanzado</span>
+                    </div>
+                    <a href="#contacto" class="course-link">Más información →</a>
+                </div>
+
+                <!-- Electrónica de Potencia -->
+                <div class="course-card" data-category="electronica">
+                    <div class="course-icon">
+                        <img src="imagenes_cursos/icono-potencia.png" alt="Electrónica de Potencia" class="course-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="course-icon-fallback" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M12 8h16v24H12V8z" stroke="#10e2d2" stroke-width="2"/>
+                                <path d="M16 14h8M16 20h8M16 26h5" stroke="#ed0f54" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="course-title-btn" data-modal="modal-potencia">Electrónica de Potencia</button>
+                    <p class="course-description">Análisis y diseño de circuitos electrónicos de potencia, enfocado en el estudio de dispositivos semiconductores, técnicas de simulación y desarrollo de prácticas experimentales aplicadas a sistemas reales.</p>
+                    <div class="course-meta">
+                        <span class="course-duration">10 clases</span>
+                        <span class="course-duration">25 horas</span>
+                        <span class="course-level">Intermedio - Avanzado</span>
+                    </div>
+                    <a href="#contacto" class="course-link">Más información →</a>
+                </div>
+
+                <!-- Electrónica Digital -->
+                <div class="course-card" data-category="electronica">
+                    <div class="course-icon">
+                        <img src="imagenes_cursos/icono-digital.png" alt="Electrónica Digital" class="course-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="course-icon-fallback" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M12 8h16v24H12V8z" stroke="#10e2d2" stroke-width="2"/>
+                                <path d="M16 14h8M16 20h8M16 26h5" stroke="#ed0f54" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="course-title-btn" data-modal="modal-digital">Electrónica Digital</button>
+                    <p class="course-description">Estudio de los principios fundamentales de la electrónica digital, enfocado en el análisis y diseño de circuitos lógicos. El curso abarca desde compuertas básicas hasta sistemas digitales, integrando simulación y prácticas para comprender el funcionamiento de señales digitales en aplicaciones reales.</p>
+                    <div class="course-meta">
+                        <span class="course-duration">10 clases</span>
+                        <span class="course-duration">25 horas</span>
+                        <span class="course-level">Intermedio</span>
+                    </div>
+                    <a href="#contacto" class="course-link">Más información →</a>
+                </div>
+
+                <!-- Programación de PLC -->
+                <div class="course-card" data-category="programacion">
+                    <div class="course-icon">
+                        <img src="imagenes_cursos/icono-plc.png" alt="Programación de PLC" class="course-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="course-icon-fallback" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M12 8h16v24H12V8z" stroke="#10e2d2" stroke-width="2"/>
+                                <path d="M16 14h8M16 20h8M16 26h5" stroke="#ed0f54" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="course-title-btn" data-modal="modal-plc">Programación de PLC</button>
+                    <p class="course-description">Programación de Controladores Lógicos Programables (PLC) orientada a la automatización de procesos industriales. El curso abarca desde los fundamentos de la lógica de control hasta el desarrollo de sistemas automatizados, integrando sensores, actuadores y monitoreo de procesos en entornos reales.</p>
+                    <div class="course-meta">
+                        <span class="course-duration">10 clases</span>
+                        <span class="course-duration">25 horas</span>
+                        <span class="course-level">Intermedio</span>
+                    </div>
+                    <a href="#contacto" class="course-link">Más información →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         MODALES DE CURSOS
+         ============================================ -->
+
+    <!-- Modal: Electrónica Básica -->
+    <div class="course-modal-overlay" id="modal-electronica-basica" role="dialog" aria-modal="true" aria-labelledby="modal-electronica-basica-title">
+        <div class="course-modal">
+            <button class="course-modal-close" aria-label="Cerrar">✕</button>
+            <div class="course-modal-header">
+                <img src="imagenes_cursos/icono-electronica-basica.png" alt="Electrónica Básica" class="modal-icon-img" onerror="this.style.display='none'">
+                <div>
+                    <span class="modal-label">Electrónica</span>
+                    <h3 id="modal-electronica-basica-title">Electrónica Básica</h3>
+                </div>
+            </div>
+            <div class="course-modal-meta">
+                <span class="course-duration">10 clases</span>
+                <span class="course-duration">25 horas</span>
+                <span class="course-level">Básico</span>
+            </div>
+            <div class="course-modal-body">
+                <p class="modal-intro">Fundamentos de circuitos, componentes, mediciones, simulación y prácticas experimentales.</p>
+                <h4>¿Qué aprenderás?</h4>
+                <ul>
+                    <li>Conceptos fundamentales de electricidad y electrónica</li>
+                    <li>Identificación y uso de componentes básicos: resistencias, capacitores, diodos y transistores</li>
+                    <li>Uso del multímetro y protoboard</li>
+                    <li>Simulación de circuitos en Tinkercad y Falstad</li>
+                    <li>Montaje de circuitos en protoboard</li>
+                    <li>Prácticas experimentales con circuitos reales</li>
+                </ul>
+                <h4>¿A quién va dirigido?</h4>
+                <p>Ideal para estudiantes, profesores y personas sin experiencia previa en electrónica que desean iniciar desde cero con una base sólida y práctica.</p>
+                <h4>Metodología</h4>
+                <p>La metodología del curso se basa en un enfoque teórico-práctico, donde se introducen los conceptos fundamentales de la electrónica y el funcionamiento de sus componentes. Posteriormente, estos conocimientos se refuerzan mediante mediciones, simulaciones y prácticas experimentales, facilitando la comprensión del comportamiento de los circuitos en aplicaciones reales.</p>
+            </div>
+            <div class="course-modal-footer">
+                <a href="#contacto" class="btn btn-primary course-modal-cta">Consultar Inscripción</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Arduino Básico Intermedio -->
+    <div class="course-modal-overlay" id="modal-arduino" role="dialog" aria-modal="true" aria-labelledby="modal-arduino-title">
+        <div class="course-modal">
+            <button class="course-modal-close" aria-label="Cerrar">✕</button>
+            <div class="course-modal-header">
+                <img src="imagenes_cursos/icono-arduino.png" alt="Arduino" class="modal-icon-img" onerror="this.style.display='none'">
+                <div>
+                    <span class="modal-label">Programación</span>
+                    <h3 id="modal-arduino-title">Arduino Básico Intermedio</h3>
+                </div>
+            </div>
+            <div class="course-modal-meta">
+                <span class="course-duration">10 clases</span>
+                <span class="course-duration">25 horas</span>
+                <span class="course-level">Básico - Intermedio</span>
+            </div>
+            <div class="course-modal-body">
+                <p class="modal-intro">Programación de la plataforma de desarrollo Arduino y desarrollo de proyectos embebidos.</p>
+                <h4>¿Qué aprenderás?</h4>
+                <ul>
+                    <li>Fundamentos de programación en C/C++ para Arduino</li>
+                    <li>Entradas y salidas digitales/analógicas</li>
+                    <li>Protocolos de comunicación</li>
+                    <li>Sensores y actuadores</li>
+                    <li>Manejo de tiempo y multitarea</li>
+                    <li>Almacenamiento y gestión de datos</li>
+                    <li>Proyectos integradores</li>
+                </ul>
+                <h4>¿A quién va dirigido?</h4>
+                <p>Profesores y estudiantes con conocimientos básicos de electrónica o programación que quieran dar el salto al mundo de los sistemas embebidos.</p>
+                <h4>Metodología</h4>
+                <p>La metodología del curso se basa en un enfoque teórico-práctico, donde se abordan los conceptos fundamentales de la programación en Arduino y, posteriormente, se aplican mediante prácticas experimentales. Esto permite reforzar el aprendizaje a través de la implementación de proyectos reales.</p>
+            </div>
+            <div class="course-modal-footer">
+                <a href="#contacto" class="btn btn-primary course-modal-cta">Consultar Inscripción</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Diseño de PCB -->
+    <div class="course-modal-overlay" id="modal-pcb" role="dialog" aria-modal="true" aria-labelledby="modal-pcb-title">
+        <div class="course-modal">
+            <button class="course-modal-close" aria-label="Cerrar">✕</button>
+            <div class="course-modal-header">
+                <img src="imagenes_cursos/icono-pcb.png" alt="PCB" class="modal-icon-img" onerror="this.style.display='none'">
+                <div>
+                    <span class="modal-label">Electrónica</span>
+                    <h3 id="modal-pcb-title">Diseño de PCB</h3>
+                </div>
+            </div>
+            <div class="course-modal-meta">
+                <span class="course-duration">10 clases</span>
+                <span class="course-duration">25 horas</span>
+                <span class="course-level">Básico - Intermedio</span>
+            </div>
+            <div class="course-modal-body">
+                <p class="modal-intro">Diseño profesional de circuitos impresos con herramientas de simulación y diseño.</p>
+                <h4>¿Qué aprenderás?</h4>
+                <ul>
+                    <li>Fundamentos de electrónica y diseño de PCB</li>
+                    <li>Simulación de circuitos en Proteus</li>
+                    <li>Introducción a EasyEDA</li>
+                    <li>Diseño de PCB en EasyEDA</li>
+                    <li>Preparación para la fabricación</li>
+                    <li>Métodos de fabricación de PCB</li>
+                    <li>Proyectos de aplicación</li>
+                </ul>
+                <h4>¿A quién va dirigido?</h4>
+                <p>Ingenieros y técnicos con experiencia en electrónica que desean profesionalizar el diseño de sus circuitos para fabricación industrial o proyectos embebidos.</p>
+                <h4>Metodología</h4>
+                <p>El curso se desarrolla bajo un enfoque teórico-práctico orientado al diseño y fabricación de placas electrónicas. En cada clase se aborda un circuito específico, iniciando con su análisis y simulación en Proteus para validar su funcionamiento. Posteriormente, se realiza el diseño del PCB en EasyEDA, aplicando criterios de ruteo y buenas prácticas de diseño electrónico. Finalmente, cada sesión culmina con la elaboración de una placa, permitiendo al estudiante reforzar el aprendizaje mediante la práctica continua y progresiva.</p>
+            </div>
+            <div class="course-modal-footer">
+                <a href="#contacto" class="btn btn-primary course-modal-cta">Consultar Inscripción</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Electrónica Intermedio -->
+    <div class="course-modal-overlay" id="modal-electronica-intermedio" role="dialog" aria-modal="true" aria-labelledby="modal-electronica-intermedio-title">
+        <div class="course-modal">
+            <button class="course-modal-close" aria-label="Cerrar">✕</button>
+            <div class="course-modal-header">
+                <img src="imagenes_cursos/icono-intermedio.png" alt="Electrónica Intermedio" class="modal-icon-img" onerror="this.style.display='none'">
+                <div>
+                    <span class="modal-label">Electrónica</span>
+                    <h3 id="modal-electronica-intermedio-title">Electrónica Intermedio</h3>
+                </div>
+            </div>
+            <div class="course-modal-meta">
+                <span class="course-duration">10 clases</span>
+                <span class="course-duration">25 horas</span>
+                <span class="course-level">Básico - Intermedio</span>
+            </div>
+            <div class="course-modal-body">
+                <p class="modal-intro">Análisis de circuitos con herramientas de simulación avanzadas, osciloscopio y dispositivos semiconductores clave.</p>
+                <h4>¿Qué aprenderás?</h4>
+                <ul>
+                    <li>Análisis de circuitos eléctricos con leyes de Kirchhoff y teoremas de red</li>
+                    <li>Simulación de circuitos en Proteus</li>
+                    <li>Uso del osciloscopio para medición y análisis de señales</li>
+                    <li>Comportamiento y aplicaciones del diodo rectificador y Zener</li>
+                    <li>Análisis de circuitos RC: respuesta temporal y en frecuencia</li>
+                    <li>Amplificadores operacionales: configuraciones y aplicaciones</li>
+                    <li>Prácticas experimentales con circuitos reales</li>
+                </ul>
+                <h4>¿A quién va dirigido?</h4>
+                <p>Estudiantes y técnicos que ya cuentan con conocimientos básicos de electrónica y desean profundizar en el análisis de circuitos y el uso de instrumentos de medición avanzados.</p>
+                <h4>Metodología</h4>
+                <p>El curso sigue un enfoque teórico-práctico, donde cada tema se introduce con fundamentos teóricos y se refuerza mediante simulaciones en Proteus y prácticas experimentales con equipos reales. El uso del osciloscopio es transversal a todo el curso, permitiendo al estudiante visualizar y comprender el comportamiento de los circuitos en condiciones reales de operación.</p>
+            </div>
+            <div class="course-modal-footer">
+                <a href="#contacto" class="btn btn-primary course-modal-cta">Consultar Inscripción</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: ESP32 Boards -->
+    <div class="course-modal-overlay" id="modal-esp32" role="dialog" aria-modal="true" aria-labelledby="modal-esp32-title">
+        <div class="course-modal">
+            <button class="course-modal-close" aria-label="Cerrar">✕</button>
+            <div class="course-modal-header">
+                <img src="imagenes_cursos/icono-esp32.png" alt="ESP32" class="modal-icon-img" onerror="this.style.display='none'">
+                <div>
+                    <span class="modal-label">Programación</span>
+                    <h3 id="modal-esp32-title">ESP32 Boards</h3>
+                </div>
+            </div>
+            <div class="course-modal-meta">
+                <span class="course-duration">10 clases</span>
+                <span class="course-duration">25 horas</span>
+                <span class="course-level">Intermedio - Avanzado</span>
+            </div>
+            <div class="course-modal-body">
+                <p class="modal-intro">Programación del ESP32 para aplicaciones IoT, con conectividad WiFi, Bluetooth y control de dispositivos en tiempo real.</p>
+                <h4>¿Qué aprenderás?</h4>
+                <ul>
+                    <li>Configuración del entorno de desarrollo para ESP32 (Arduino IDE / VS Code)</li>
+                    <li>Manejo de GPIOs, PWM, ADC y DAC</li>
+                    <li>Comunicación WiFi: servidor web, cliente HTTP y MQTT</li>
+                    <li>Comunicación Bluetooth clásico y BLE</li>
+                    <li>Integración de sensores y actuadores</li>
+                    <li>Almacenamiento de datos con SPIFFS y tarjeta SD</li>
+                    <li>Control y monitoreo de dispositivos en tiempo real</li>
+                    <li>Proyectos IoT integradores</li>
+                </ul>
+                <h4>¿A quién va dirigido?</h4>
+                <p>Estudiantes y profesionales con conocimientos previos en Arduino o programación en C/C++ que deseen desarrollar proyectos IoT con conectividad inalámbrica avanzada.</p>
+                <h4>Metodología</h4>
+                <p>El curso combina teoría y práctica en cada sesión. Se parte de los fundamentos de la plataforma ESP32 y se avanza progresivamente hacia proyectos de mayor complejidad, integrando comunicación inalámbrica, sensores y control de dispositivos. Cada clase culmina con una práctica aplicada que consolida los conceptos aprendidos.</p>
+            </div>
+            <div class="course-modal-footer">
+                <a href="#contacto" class="btn btn-primary course-modal-cta">Consultar Inscripción</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Electrónica de Potencia -->
+    <div class="course-modal-overlay" id="modal-potencia" role="dialog" aria-modal="true" aria-labelledby="modal-potencia-title">
+        <div class="course-modal">
+            <button class="course-modal-close" aria-label="Cerrar">✕</button>
+            <div class="course-modal-header">
+                <img src="imagenes_cursos/icono-potencia.png" alt="Electrónica de Potencia" class="modal-icon-img" onerror="this.style.display='none'">
+                <div>
+                    <span class="modal-label">Electrónica</span>
+                    <h3 id="modal-potencia-title">Electrónica de Potencia</h3>
+                </div>
+            </div>
+            <div class="course-modal-meta">
+                <span class="course-duration">10 clases</span>
+                <span class="course-duration">25 horas</span>
+                <span class="course-level">Intermedio - Avanzado</span>
+            </div>
+            <div class="course-modal-body">
+                <p class="modal-intro">Análisis y diseño de circuitos de potencia con semiconductores de alta corriente, simulación y prácticas experimentales aplicadas a sistemas reales.</p>
+                <h4>¿Qué aprenderás?</h4>
+                <ul>
+                    <li>Fundamentos de la electrónica de potencia y seguridad eléctrica</li>
+                    <li>Dispositivos semiconductores de potencia: diodos, tiristores (SCR), TRIAC, MOSFET e IGBT</li>
+                    <li>Circuitos rectificadores: media onda, onda completa y en puente</li>
+                    <li>Reguladores de voltaje lineales y conmutados</li>
+                    <li>Convertidores DC-DC: Buck, Boost y Buck-Boost</li>
+                    <li>Control de velocidad de motores DC y AC</li>
+                    <li>Simulación de circuitos en Proteus</li>
+                    <li>Prácticas experimentales con cargas reales</li>
+                </ul>
+                <h4>¿A quién va dirigido?</h4>
+                <p>Estudiantes de ingeniería eléctrica o electrónica y técnicos que deseen especializarse en el diseño y análisis de sistemas de conversión y control de energía eléctrica.</p>
+                <h4>Metodología</h4>
+                <p>El curso sigue un enfoque teórico-práctico, donde cada topología de circuito se analiza desde sus fundamentos matemáticos y se valida mediante simulación en Proteus. Posteriormente se construyen y prueban prototipos reales, reforzando la comprensión del comportamiento de los dispositivos de potencia en condiciones de operación reales.</p>
+            </div>
+            <div class="course-modal-footer">
+                <a href="#contacto" class="btn btn-primary course-modal-cta">Consultar Inscripción</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Electrónica Digital -->
+    <div class="course-modal-overlay" id="modal-digital" role="dialog" aria-modal="true" aria-labelledby="modal-digital-title">
+        <div class="course-modal">
+            <button class="course-modal-close" aria-label="Cerrar">✕</button>
+            <div class="course-modal-header">
+                <img src="imagenes_cursos/icono-digital.png" alt="Electrónica Digital" class="modal-icon-img" onerror="this.style.display='none'">
+                <div>
+                    <span class="modal-label">Electrónica</span>
+                    <h3 id="modal-digital-title">Electrónica Digital</h3>
+                </div>
+            </div>
+            <div class="course-modal-meta">
+                <span class="course-duration">10 clases</span>
+                <span class="course-duration">25 horas</span>
+                <span class="course-level">Intermedio</span>
+            </div>
+            <div class="course-modal-body">
+                <p class="modal-intro">Estudio de circuitos lógicos, desde compuertas básicas hasta sistemas digitales combinacionales y secuenciales, con simulación y prácticas experimentales.</p>
+                <h4>¿Qué aprenderás?</h4>
+                <ul>
+                    <li>Sistemas de numeración: binario, octal y hexadecimal</li>
+                    <li>Álgebra de Boole y simplificación con mapas de Karnaugh</li>
+                    <li>Compuertas lógicas básicas y universales (NAND, NOR)</li>
+                    <li>Circuitos combinacionales: multiplexores, decodificadores y sumadores</li>
+                    <li>Flip-flops y circuitos secuenciales: contadores y registros de desplazamiento</li>
+                    <li>Familias lógicas TTL y CMOS</li>
+                    <li>Simulación de circuitos digitales en Proteus</li>
+                    <li>Prácticas con circuitos integrados reales</li>
+                </ul>
+                <h4>¿A quién va dirigido?</h4>
+                <p>Estudiantes de electrónica, informática o ingeniería que deseen comprender el funcionamiento interno de los sistemas digitales y sentar las bases para el estudio de microcontroladores y FPGAs.</p>
+                <h4>Metodología</h4>
+                <p>Cada sesión combina explicación teórica con simulación en Proteus y montaje de circuitos en protoboard con CIs reales. Se avanza de forma progresiva desde los elementos lógicos más simples hasta el diseño de sistemas digitales completos, reforzando el aprendizaje con prácticas que reproducen situaciones de aplicación real.</p>
+            </div>
+            <div class="course-modal-footer">
+                <a href="#contacto" class="btn btn-primary course-modal-cta">Consultar Inscripción</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Programación de PLC -->
+    <div class="course-modal-overlay" id="modal-plc" role="dialog" aria-modal="true" aria-labelledby="modal-plc-title">
+        <div class="course-modal">
+            <button class="course-modal-close" aria-label="Cerrar">✕</button>
+            <div class="course-modal-header">
+                <img src="imagenes_cursos/icono-plc.png" alt="Programación de PLC" class="modal-icon-img" onerror="this.style.display='none'">
+                <div>
+                    <span class="modal-label">Programación</span>
+                    <h3 id="modal-plc-title">Programación de PLC</h3>
+                </div>
+            </div>
+            <div class="course-modal-meta">
+                <span class="course-duration">10 clases</span>
+                <span class="course-duration">25 horas</span>
+                <span class="course-level">Intermedio</span>
+            </div>
+            <div class="course-modal-body">
+                <p class="modal-intro">Programación de PLCs para la automatización de procesos industriales, desde la lógica de control básica hasta sistemas con sensores, actuadores y monitoreo en tiempo real.</p>
+                <h4>¿Qué aprenderás?</h4>
+                <ul>
+                    <li>Fundamentos de automatización industrial y arquitectura del PLC</li>
+                    <li>Lenguaje Ladder (LD): contactos, bobinas y bloques funcionales</li>
+                    <li>Temporizadores, contadores y comparadores</li>
+                    <li>Lenguaje de bloques de función (FBD)</li>
+                    <li>Manejo de entradas y salidas digitales y analógicas</li>
+                    <li>Integración de sensores industriales y actuadores</li>
+                    <li>Comunicación y monitoreo de procesos (HMI básico)</li>
+                    <li>Proyectos de automatización aplicados a procesos reales</li>
+                </ul>
+                <h4>¿A quién va dirigido?</h4>
+                <p>Técnicos e ingenieros del área eléctrica, electrónica o mecatrónica que deseen iniciarse o profundizar en la programación de PLCs para entornos industriales.</p>
+                <h4>Metodología</h4>
+                <p>El curso se desarrolla con un enfoque teórico-práctico orientado a la industria. Cada sesión introduce un concepto de programación que se implementa directamente en el software del PLC mediante simulación y, progresivamente, en equipos reales. Los proyectos finales reproducen procesos industriales típicos, preparando al estudiante para entornos de trabajo reales.</p>
+            </div>
+            <div class="course-modal-footer">
+                <a href="#contacto" class="btn btn-primary course-modal-cta">Consultar Inscripción</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         ASESORÍA
+         ============================================ -->
+    <section id="asesoria" class="advisory">
+        <div class="container">
+            <div class="advisory-content">
+                <div class="advisory-text">
+                    <span class="section-label">Servicios</span>
+                    <h2 class="section-title">Asesoría Técnica Especializada</h2>
+                    <p class="section-description">
+                        Acompañamiento profesional para tus proyectos de electrónica y desarrollo de software.
+                    </p>
+                    <div class="advisory-services">
+                        <div class="service-item">
+                            <div class="service-icon">→</div>
+                            <div>
+                                <h4>Consultoría de Proyectos</h4>
+                                <p>Evaluación técnica y planificación de tus ideas, te apoyamos en todos los aspectos técnicos de tus proyectos.</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">→</div>
+                            <div>
+                                <h4>Desarrollo a Medida</h4>
+                                <p>Soluciones personalizadas de hardware y software dedicados a llevar tu proyecto al siguiente nivel.</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">→</div>
+                            <div>
+                                <h4>Soluciones Personalizadas</h4>
+                                <p>Desarrollo e investigación acorde a las necesidades específicas de tus proyectos.</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">→</div>
+                            <div>
+                                <h4>Prototipado Rápido</h4>
+                                <p>De la idea al prototipo funcional, incluimos ejemplos y avances en cada cotización.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary">Solicitar Asesoría</a>
+                </div>
+
+                <div class="advisory-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="window-dot"></span>
+                            <span class="window-dot"></span>
+                            <span class="window-dot"></span>
+                            <span class="window-title">Proyectos Tasker</span>
+                        </div>
+                        <div class="video-player-wrap">
+                            <video
+                                id="advisoryVideo"
+                                class="advisory-video"
+                                muted
+                                playsinline
+                                preload="auto"
+                            ></video>
+                            <div class="video-progress-bar">
+                                <div class="video-progress-fill" id="videoProgressFill"></div>
+                            </div>
+                            <div class="video-dots" id="videoDots"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         GALERÍA DE PROYECTOS
+         Agrega tus fotos en imagenes_galeria/
+         ============================================ -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Proyectos</span>
+                <h2 class="section-title">Galería de Proyectos</h2>
+                <p class="section-description">Una muestra de los proyectos desarrollados en nuestros cursos y asesorías</p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="gallery-filter-btn active" data-filter="todos">Todos</button>
+                <button class="gallery-filter-btn" data-filter="electronica">Electrónica</button>
+                <button class="gallery-filter-btn" data-filter="software">Software</button>
+                <button class="gallery-filter-btn" data-filter="iot">IoT</button>
+            </div>
+
+            <div class="gallery-slider-wrapper">
+                <div class="gallery-slider" id="gallerySlider">
+
+                    <!-- FOTO 1 -->
+                    <div class="gallery-slide" data-filter-cat="electronica">
+                        <div class="gallery-slide-inner" data-lightbox="imagenes_galeria/proyecto1.jpg" data-caption="Circuito Amplificador">
+                            <img src="imagenes_galeria/proyecto1.jpg" alt="Proyecto 1" loading="lazy"
+                                 onerror="this.parentElement.parentElement.querySelector('.gallery-placeholder').style.display='flex'; this.style.display='none'">
+                            <div class="gallery-placeholder" style="display:none">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="4" stroke="#10e2d2" stroke-width="2"/><circle cx="16" cy="16" r="4" stroke="#10e2d2" stroke-width="2"/><path d="M4 32l12-10 8 8 6-5 14 13" stroke="#10e2d2" stroke-width="2" stroke-linejoin="round"/></svg>
+                                <span>proyecto1.jpg</span>
+                            </div>
+                            <div class="gallery-slide-caption">
+                                <h4>Circuito Amplificador</h4>
+                                <p>Diseño y construcción de amplificador de audio clase AB</p>
+                                <span class="gallery-tag">Electrónica</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOTO 2 -->
+                    <div class="gallery-slide" data-filter-cat="iot">
+                        <div class="gallery-slide-inner" data-lightbox="imagenes_galeria/proyecto2.jpg" data-caption="Estación Meteorológica IoT">
+                            <img src="imagenes_galeria/proyecto2.jpg" alt="Proyecto 2" loading="lazy"
+                                 onerror="this.parentElement.parentElement.querySelector('.gallery-placeholder').style.display='flex'; this.style.display='none'">
+                            <div class="gallery-placeholder" style="display:none">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="4" stroke="#10e2d2" stroke-width="2"/><circle cx="16" cy="16" r="4" stroke="#10e2d2" stroke-width="2"/><path d="M4 32l12-10 8 8 6-5 14 13" stroke="#10e2d2" stroke-width="2" stroke-linejoin="round"/></svg>
+                                <span>proyecto2.jpg</span>
+                            </div>
+                            <div class="gallery-slide-caption">
+                                <h4>Estación Meteorológica IoT</h4>
+                                <p>Monitoreo remoto de temperatura y humedad con ESP32</p>
+                                <span class="gallery-tag">IoT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOTO 3 -->
+                    <div class="gallery-slide" data-filter-cat="software">
+                        <div class="gallery-slide-inner" data-lightbox="imagenes_galeria/proyecto3.jpg" data-caption="Dashboard Web">
+                            <img src="imagenes_galeria/proyecto3.jpg" alt="Proyecto 3" loading="lazy"
+                                 onerror="this.parentElement.parentElement.querySelector('.gallery-placeholder').style.display='flex'; this.style.display='none'">
+                            <div class="gallery-placeholder" style="display:none">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="4" stroke="#10e2d2" stroke-width="2"/><circle cx="16" cy="16" r="4" stroke="#10e2d2" stroke-width="2"/><path d="M4 32l12-10 8 8 6-5 14 13" stroke="#10e2d2" stroke-width="2" stroke-linejoin="round"/></svg>
+                                <span>proyecto3.jpg</span>
+                            </div>
+                            <div class="gallery-slide-caption">
+                                <h4>Dashboard Web</h4>
+                                <p>Panel de control para visualización de datos en tiempo real</p>
+                                <span class="gallery-tag">Software</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOTO 4 -->
+                    <div class="gallery-slide" data-filter-cat="electronica">
+                        <div class="gallery-slide-inner" data-lightbox="imagenes_galeria/proyecto4.jpg" data-caption="PCB Personalizada">
+                            <img src="imagenes_galeria/proyecto4.jpg" alt="Proyecto 4" loading="lazy"
+                                 onerror="this.parentElement.parentElement.querySelector('.gallery-placeholder').style.display='flex'; this.style.display='none'">
+                            <div class="gallery-placeholder" style="display:none">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="4" stroke="#10e2d2" stroke-width="2"/><circle cx="16" cy="16" r="4" stroke="#10e2d2" stroke-width="2"/><path d="M4 32l12-10 8 8 6-5 14 13" stroke="#10e2d2" stroke-width="2" stroke-linejoin="round"/></svg>
+                                <span>proyecto4.jpg</span>
+                            </div>
+                            <div class="gallery-slide-caption">
+                                <h4>PCB Personalizada</h4>
+                                <p>Diseño y fabricación de placa para control de motores</p>
+                                <span class="gallery-tag">Electrónica</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOTO 5 -->
+                    <div class="gallery-slide" data-filter-cat="iot">
+                        <div class="gallery-slide-inner" data-lightbox="imagenes_galeria/proyecto5.jpg" data-caption="Robot Seguidor de Línea">
+                            <img src="imagenes_galeria/proyecto5.jpg" alt="Proyecto 5" loading="lazy"
+                                 onerror="this.parentElement.parentElement.querySelector('.gallery-placeholder').style.display='flex'; this.style.display='none'">
+                            <div class="gallery-placeholder" style="display:none">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="4" stroke="#10e2d2" stroke-width="2"/><circle cx="16" cy="16" r="4" stroke="#10e2d2" stroke-width="2"/><path d="M4 32l12-10 8 8 6-5 14 13" stroke="#10e2d2" stroke-width="2" stroke-linejoin="round"/></svg>
+                                <span>proyecto5.jpg</span>
+                            </div>
+                            <div class="gallery-slide-caption">
+                                <h4>Robot Seguidor de Línea</h4>
+                                <p>Robot autónomo programado con Arduino y sensores IR</p>
+                                <span class="gallery-tag">IoT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOTO 6 -->
+                    <div class="gallery-slide" data-filter-cat="software">
+                        <div class="gallery-slide-inner" data-lightbox="imagenes_galeria/proyecto6.jpg" data-caption="App de Automatización">
+                            <img src="imagenes_galeria/proyecto6.jpg" alt="Proyecto 6" loading="lazy"
+                                 onerror="this.parentElement.parentElement.querySelector('.gallery-placeholder').style.display='flex'; this.style.display='none'">
+                            <div class="gallery-placeholder" style="display:none">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="4" stroke="#10e2d2" stroke-width="2"/><circle cx="16" cy="16" r="4" stroke="#10e2d2" stroke-width="2"/><path d="M4 32l12-10 8 8 6-5 14 13" stroke="#10e2d2" stroke-width="2" stroke-linejoin="round"/></svg>
+                                <span>proyecto6.jpg</span>
+                            </div>
+                            <div class="gallery-slide-caption">
+                                <h4>App de Automatización</h4>
+                                <p>Aplicación Python para control de dispositivos del hogar</p>
+                                <span class="gallery-tag">Software</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOTO 7 -->
+                    <div class="gallery-slide" data-filter-cat="software">
+                        <div class="gallery-slide-inner" data-lightbox="imagenes_galeria/proyecto7.jpg" data-caption="Proyecto 7">
+                            <img src="imagenes_galeria/proyecto7.jpg" alt="Proyecto 7" loading="lazy"
+                                 onerror="this.parentElement.parentElement.querySelector('.gallery-placeholder').style.display='flex'; this.style.display='none'">
+                            <div class="gallery-placeholder" style="display:none">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="4" stroke="#10e2d2" stroke-width="2"/><circle cx="16" cy="16" r="4" stroke="#10e2d2" stroke-width="2"/><path d="M4 32l12-10 8 8 6-5 14 13" stroke="#10e2d2" stroke-width="2" stroke-linejoin="round"/></svg>
+                                <span>proyecto7.jpg</span>
+                            </div>
+                            <div class="gallery-slide-caption">
+                                <h4>Proyecto 7</h4>
+                                <p>Descripción del proyecto 7</p>
+                                <span class="gallery-tag">Software</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOTO 8 -->
+                    <div class="gallery-slide" data-filter-cat="software">
+                        <div class="gallery-slide-inner" data-lightbox="imagenes_galeria/proyecto8.jpg" data-caption="Proyecto 8">
+                            <img src="imagenes_galeria/proyecto8.jpg" alt="Proyecto 8" loading="lazy"
+                                 onerror="this.parentElement.parentElement.querySelector('.gallery-placeholder').style.display='flex'; this.style.display='none'">
+                            <div class="gallery-placeholder" style="display:none">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="4" stroke="#10e2d2" stroke-width="2"/><circle cx="16" cy="16" r="4" stroke="#10e2d2" stroke-width="2"/><path d="M4 32l12-10 8 8 6-5 14 13" stroke="#10e2d2" stroke-width="2" stroke-linejoin="round"/></svg>
+                                <span>proyecto8.jpg</span>
+                            </div>
+                            <div class="gallery-slide-caption">
+                                <h4>Proyecto 8</h4>
+                                <p>Descripción del proyecto 8</p>
+                                <span class="gallery-tag">Software</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOTO 9 -->
+                    <div class="gallery-slide" data-filter-cat="software">
+                        <div class="gallery-slide-inner" data-lightbox="imagenes_galeria/proyecto9.jpg" data-caption="Proyecto 9">
+                            <img src="imagenes_galeria/proyecto9.jpg" alt="Proyecto 9" loading="lazy"
+                                 onerror="this.parentElement.parentElement.querySelector('.gallery-placeholder').style.display='flex'; this.style.display='none'">
+                            <div class="gallery-placeholder" style="display:none">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="4" stroke="#10e2d2" stroke-width="2"/><circle cx="16" cy="16" r="4" stroke="#10e2d2" stroke-width="2"/><path d="M4 32l12-10 8 8 6-5 14 13" stroke="#10e2d2" stroke-width="2" stroke-linejoin="round"/></svg>
+                                <span>proyecto9.jpg</span>
+                            </div>
+                            <div class="gallery-slide-caption">
+                                <h4>Proyecto 9</h4>
+                                <p>Descripción del proyecto 9</p>
+                                <span class="gallery-tag">Software</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /gallery-slider -->
+
+                <button class="gallery-slider-btn gallery-slider-prev" aria-label="Anterior">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"/>
+                    </svg>
+                </button>
+                <button class="gallery-slider-btn gallery-slider-next" aria-label="Siguiente">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"/>
+                    </svg>
+                </button>
+            </div><!-- /gallery-slider-wrapper -->
+
+            <div class="gallery-slider-dots" id="galleryDots"></div>
+
+            <!-- CORRECCIÓN: total actualizado a 9 (era 6) -->
+            <div class="gallery-counter">
+                <span id="galleryCurrentSlide">1</span> / <span id="galleryTotalSlides">9</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================
+         PRODUCTOS
+         Agrega tus productos en imagenes_productos/
+         ============================================ -->
+    <section id="productos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Tienda</span>
+                <h2 class="section-title">Nuestros Productos</h2>
+                <p class="section-description">Kits, módulos y componentes seleccionados para tus proyectos</p>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- Producto 1 -->
+                <div class="product-card" data-product-category="kits">
+                    <div class="product-img-wrap" data-lightbox="imagenes_productos/producto1.png" data-caption="Kit Arduino Starter">
+                        <img src="imagenes_productos/producto1.png" alt="Kit Arduino Starter" loading="lazy"
+                             onerror="this.parentElement.querySelector('.product-img-placeholder').style.display='flex'; this.style.display='none'">
+                        <div class="product-img-placeholder" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="3" y="3" width="34" height="34" rx="3" stroke="#10e2d2" stroke-width="1.5"/><circle cx="13" cy="13" r="3" stroke="#10e2d2" stroke-width="1.5"/><path d="M3 27l10-8 6 6 5-4 13 11" stroke="#10e2d2" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                            <span>producto1.png</span>
+                        </div>
+                        <span class="product-badge">Kit</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Kit Arduino Starter</h3>
+                        <p class="product-desc">Kit completo para principiantes: placa Arduino UNO, protoboard, LEDs, resistencias, cables y sensores básicos.</p>
+                        <a href="#contacto" class="product-link">Consultar →</a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card" data-product-category="modulos">
+                    <div class="product-img-wrap" data-lightbox="imagenes_productos/producto2.jpg" data-caption="Módulo ESP32 WiFi+BT">
+                        <img src="imagenes_productos/producto2.jpg" alt="Módulo ESP32" loading="lazy"
+                             onerror="this.parentElement.querySelector('.product-img-placeholder').style.display='flex'; this.style.display='none'">
+                        <div class="product-img-placeholder" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="3" y="3" width="34" height="34" rx="3" stroke="#10e2d2" stroke-width="1.5"/><circle cx="13" cy="13" r="3" stroke="#10e2d2" stroke-width="1.5"/><path d="M3 27l10-8 6 6 5-4 13 11" stroke="#10e2d2" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                            <span>producto2.jpg</span>
+                        </div>
+                        <span class="product-badge">Módulo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Módulo ESP32 WiFi+BT</h3>
+                        <p class="product-desc">Microcontrolador ESP32 con WiFi y Bluetooth integrados, ideal para proyectos IoT de alta performance.</p>
+                        <a href="#contacto" class="product-link">Consultar →</a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card" data-product-category="herramientas">
+                    <div class="product-img-wrap" data-lightbox="imagenes_productos/producto3.jpg" data-caption="Multímetro Digital">
+                        <img src="imagenes_productos/producto3.jpg" alt="Multímetro Digital" loading="lazy"
+                             onerror="this.parentElement.querySelector('.product-img-placeholder').style.display='flex'; this.style.display='none'">
+                        <div class="product-img-placeholder" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="3" y="3" width="34" height="34" rx="3" stroke="#10e2d2" stroke-width="1.5"/><circle cx="13" cy="13" r="3" stroke="#10e2d2" stroke-width="1.5"/><path d="M3 27l10-8 6 6 5-4 13 11" stroke="#10e2d2" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                            <span>producto3.jpg</span>
+                        </div>
+                        <span class="product-badge">Herramienta</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Multímetro Digital</h3>
+                        <p class="product-desc">Multímetro profesional con medición de voltaje AC/DC, corriente, resistencia, continuidad y frecuencia.</p>
+                        <a href="#contacto" class="product-link">Consultar →</a>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card" data-product-category="kits">
+                    <div class="product-img-wrap" data-lightbox="imagenes_productos/producto4.jpg" data-caption="Kit 37 Sensores">
+                        <img src="imagenes_productos/producto4.jpg" alt="Kit de Sensores" loading="lazy"
+                             onerror="this.parentElement.querySelector('.product-img-placeholder').style.display='flex'; this.style.display='none'">
+                        <div class="product-img-placeholder" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="3" y="3" width="34" height="34" rx="3" stroke="#10e2d2" stroke-width="1.5"/><circle cx="13" cy="13" r="3" stroke="#10e2d2" stroke-width="1.5"/><path d="M3 27l10-8 6 6 5-4 13 11" stroke="#10e2d2" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                            <span>producto4.jpg</span>
+                        </div>
+                        <span class="product-badge">Kit</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Kit 37 Sensores</h3>
+                        <p class="product-desc">Set de 37 módulos de sensores: temperatura, humedad, ultrasonido, IR, joystick, giroscopio y más.</p>
+                        <a href="#contacto" class="product-link">Consultar →</a>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="product-card" data-product-category="modulos">
+                    <div class="product-img-wrap" data-lightbox="imagenes_productos/producto5.jpg" data-caption="Display OLED 0.96&quot;">
+                        <img src="imagenes_productos/producto5.jpg" alt="Display OLED" loading="lazy"
+                             onerror="this.parentElement.querySelector('.product-img-placeholder').style.display='flex'; this.style.display='none'">
+                        <div class="product-img-placeholder" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="3" y="3" width="34" height="34" rx="3" stroke="#10e2d2" stroke-width="1.5"/><circle cx="13" cy="13" r="3" stroke="#10e2d2" stroke-width="1.5"/><path d="M3 27l10-8 6 6 5-4 13 11" stroke="#10e2d2" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                            <span>producto5.jpg</span>
+                        </div>
+                        <span class="product-badge">Módulo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Display OLED 0.96"</h3>
+                        <p class="product-desc">Pantalla OLED I2C de 128x64 píxeles. Compatible con Arduino, ESP32 y Raspberry Pi. Bajo consumo energético.</p>
+                        <a href="#contacto" class="product-link">Consultar →</a>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="product-card" data-product-category="herramientas">
+                    <div class="product-img-wrap" data-lightbox="imagenes_productos/producto6.jpg" data-caption="Soldador de Temperatura Variable">
+                        <img src="imagenes_productos/producto6.jpg" alt="Soldador" loading="lazy"
+                             onerror="this.parentElement.querySelector('.product-img-placeholder').style.display='flex'; this.style.display='none'">
+                        <div class="product-img-placeholder" style="display:none">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="3" y="3" width="34" height="34" rx="3" stroke="#10e2d2" stroke-width="1.5"/><circle cx="13" cy="13" r="3" stroke="#10e2d2" stroke-width="1.5"/><path d="M3 27l10-8 6 6 5-4 13 11" stroke="#10e2d2" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                            <span>producto6.jpg</span>
+                        </div>
+                        <span class="product-badge">Herramienta</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Soldador de Temperatura Variable</h3>
+                        <p class="product-desc">Soldador profesional con control digital de temperatura 200-480°C, punta de repuesto incluida.</p>
+                        <a href="#contacto" class="product-link">Consultar →</a>
+                    </div>
+                </div>
+
+            </div><!-- /products-grid -->
+        </div>
+    </section>
+
+    <!-- ============================================
+         NOSOTROS
+         ============================================ -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Quiénes Somos</span>
+                <h2 class="section-title">Expertos en Tecnología</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Somos un equipo apasionado por la educación tecnológica. Con años de experiencia en la industria
+                        de electrónica y desarrollo de software, nos dedicamos a formar profesionales capacitados y a
+                        brindar soluciones técnicas de calidad.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-number">5+</div>
+                            <div class="feature-text">Años de experiencia</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-number">100%</div>
+                            <div class="feature-text">Clases prácticas</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-number">24/7</div>
+                            <div class="feature-text">Soporte online</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIOS
+         ============================================ -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Testimonios</span>
+                <h2 class="section-title">Lo Que Dicen Nuestros Estudiantes</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Excelente curso de Arduino. Los instructores tienen mucha paciencia y las clases son muy
+                        prácticas. Logré construir mi primer robot en 2 meses."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div>
+                            <div class="author-name">María González</div>
+                            <div class="author-role">Estudiante de Arduino</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "La asesoría técnica me ayudó a optimizar mi proyecto de IoT. Redujimos el consumo de energía
+                        en un 40%. Muy profesionales."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">C</div>
+                        <div>
+                            <div class="author-name">Carlos Ramírez</div>
+                            <div class="author-role">Cliente de Asesoría</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Aprendí desarrollo web desde cero y ahora trabajo como freelancer. El curso es muy completo
+                        y actualizado con las últimas tecnologías."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div>
+                            <div class="author-name">Ana Martínez</div>
+                            <div class="author-role">Estudiante de Web</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACTO
+         ============================================ -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-label">Contacto</span>
+                    <h2 class="section-title">Hablemos de tu Proyecto</h2>
+                    <p class="section-description">
+                        Estamos listos para ayudarte a alcanzar tus objetivos. Contáctanos y te responderemos pronto.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="#10e2d2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <!-- CORRECCIÓN: href corregido al email real -->
+                                <a href="mailto:tasker.electronica.sist2016@gmail.com">tasker.electronica.sist2016@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#10e2d2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Teléfono</div>
+                                <a href="tel:+59178430462">(+591) 78430462 - (+591) 67627846</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="#10e2d2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="10" r="3" stroke="#10e2d2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Ubicación</div>
+                                <span>Santa Cruz - La Paz - El Alto, Bolivia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Estoy interesado en...</option>
+                            <option value="curso">Un curso</option>
+                            <option value="asesoria">Asesoría técnica</option>
+                            <option value="proyecto">Desarrollo de proyecto</option>
+                            <option value="producto">Un producto</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Cuéntanos sobre tu proyecto o consulta" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <img src="footer.png" class="logo-img" alt="Tasker logo">
+                        <span>Tasker</span>
+                    </div>
+                    <p class="footer-description">
+                        Formando profesionales en electrónica y programación desde 2020.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Cursos</h4>
+                        <ul>
+                            <li><a href="#cursos">Electrónica</a></li>
+                            <li><a href="#cursos">Programación</a></li>
+                            <li><a href="#cursos">Arduino</a></li>
+                            <li><a href="#cursos">ESP32</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li><a href="#asesoria">Asesoría Técnica</a></li>
+                            <li><a href="#galeria">Galería</a></li>
+                            <li><a href="#productos">Productos</a></li>
+                            <li><a href="#asesoria">Prototipado</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#nosotros">Sobre Nosotros</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tasker. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         LIGHTBOX (galería y productos)
+         ============================================ -->
+    <div class="lightbox-overlay" id="lightbox">
+        <div class="lightbox-inner">
+            <img id="lightboxImg" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+            <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
