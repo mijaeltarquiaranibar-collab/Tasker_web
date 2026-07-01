@@ -287,7 +287,7 @@ console.log('%c¿Interesado en aprender más? Visita nuestros cursos de programa
         document.body.style.overflow = '';
     }
 
-    document.querySelectorAll('.course-title-btn').forEach(btn => {
+    document.querySelectorAll('.course-title-btn, .course-btn-primary[data-modal]').forEach(btn => {
         btn.addEventListener('click', () => {
             const modal = document.getElementById(btn.getAttribute('data-modal'));
             if (!modal) return;
@@ -548,4 +548,53 @@ document.addEventListener('keydown', (e) => {
     video.addEventListener('ended', () => goTo(current + 1));
 
     goTo(0);
+})();
+
+
+/* ============================================
+   MODALES DE PRODUCTOS
+   ============================================ */
+(function () {
+    function closeProductModal(overlay) {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.product-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const modalId = btn.getAttribute('data-modal');
+            if (!modalId) return;
+            const modal = document.getElementById(modalId);
+            if (!modal) return;
+            modal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    document.querySelectorAll('.product-modal-close').forEach(closeBtn => {
+        closeBtn.addEventListener('click', () => {
+            closeProductModal(closeBtn.closest('.product-modal-overlay'));
+        });
+    });
+
+    document.querySelectorAll('.product-modal-overlay').forEach(overlay => {
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) closeProductModal(overlay);
+        });
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const openModal = document.querySelector('.product-modal-overlay.open');
+            if (openModal) closeProductModal(openModal);
+        }
+    });
+
+    document.querySelectorAll('.product-modal-cta').forEach(cta => {
+        cta.addEventListener('click', () => {
+            const openModal = document.querySelector('.product-modal-overlay.open');
+            if (openModal) closeProductModal(openModal);
+        });
+    });
 })();
